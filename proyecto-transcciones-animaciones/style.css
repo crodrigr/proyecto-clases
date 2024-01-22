@@ -14,7 +14,7 @@
   font-size: 20px;
   line-height: 40px;
   border: 10px solid green;
-  transition: all 500ms;
+  transition: all 2000ms;
 }
 
 #boton:hover{
@@ -22,4 +22,44 @@
     color: green;
     border: 10px solid green;
     border-radius: 10px;
+}
+
+#caja{
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+    margin-top:20px;
+    text-align: center;
+    animation-name: desplazamiento;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes desplazamiento {
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 1200px;
+    }
+    
+}
+@keyframes desplazamiento {
+   0%{
+     margin-left: 0px;
+     transform: rotate(0deg);
+   }
+   50%{
+     margin-left: 1000px;
+     transform: rotate(360deg);
+     border-radius: 50%;
+   }
+   100%
+   {
+    margin-left: 0px;
+     transform: rotate(0deg);
+   } 
 }
