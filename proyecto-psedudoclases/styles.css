@@ -1,0 +1,42 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li{
+    font-size: 20px;
+    
+}
+
+ul li:first-child{
+    color: indigo;
+    font-weight: bold; 
+}
+
+ul li:nth-child(4){
+    color:aqua;
+    font-weight: bold; 
+}
+
+#enlace{
+    font-size: 25px;
+    color: red;
+}
+
+#enlace:link{
+    color: gray;
+}
+
+#enlace:visited{
+    color:black;
+}
+
+#enlace:hover{
+    color:green;
+}
+#enlace:active{
+    color: blue;
+}
+
+input:focus{
+    border: 4px dashed gray;
+}
